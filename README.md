@@ -1,8 +1,11 @@
 # ATM Redo mod for Minetest
+
 original by gpcf: git://gpcf.eu/atm.git
+
 updated and improved by RB
 
 ## New:
+
 *Improved, high quality graphics.
 *Added ability to process 50 and 100 minegeld denominations.
 *Reduced 3 ATMs down to 1 that does everything.
