@@ -1,6 +1,6 @@
 # ATM mod for Minetest
 
-This mod adds a faimly of ATM machines designed to work with the currency mod and its
+This mod adds a family of ATM machines designed to work with the currency mod and its
 minegeld banknotes. ATMs allow you to transfer money to your bank account and withdraw
 various sums as needed.
 
