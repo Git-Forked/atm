@@ -4,7 +4,7 @@ original by gpcf: git://gpcf.eu/atm.git
 
 updated and improved by RB
 
-## New:
+## New
 
 *Improved, high quality graphics.
 *Added ability to process 50 and 100 minegeld denominations.
