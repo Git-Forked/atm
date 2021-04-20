@@ -4,13 +4,13 @@
 minetest.register_on_player_receive_fields(function(player, form, pressed)
 
 	-- ATMs
-	if form == "atm.form" or form == "atm.form2" or form == "atm.form3" then
+	if form == "atm.form" then
 		local n = player:get_player_name()
 		local transaction = { amount = 0, denomination = 0, count = 0 }
 		local pinv=player:get_inventory()
 
 		-- single note transactions
-		for _,i in pairs({1, 5, 10, -1, -5, -10}) do
+		for _,i in pairs({1, 5, 10, 50, 100, -1, -5, -10, -50, -100}) do
 			if pressed["i"..i] then
 				transaction.amount = i
 				transaction.denomination = '_' .. math.abs(i)
@@ -23,7 +23,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		end
 
 		-- 10x banknote transactions
-		for _,t in pairs({10, 50, 100, -10, -50, -100}) do
+		for _,t in pairs({10, 50, 100, 500, 1000, -10, -50, -100, -500, -1000}) do
 			if pressed["t"..t] then
 				transaction.amount = t
 				transaction.denomination = '_' .. math.abs(t/10)
@@ -36,7 +36,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		end
 
 		-- 100x banknote transactions
-		for _,c in pairs({100, 500, 1000, -100, -500, -1000}) do
+		for _,c in pairs({100, 500, 1000, 5000, 10000, -100, -500, -1000, -5000, -10000}) do
 			if pressed["c"..c] then
 				transaction.amount = c
 				transaction.denomination = '_' .. math.abs(c/100)
@@ -75,13 +75,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		atm.saveaccounts()
 
 		if not pressed.Quit and not pressed.quit then
-			if form == "atm.form" then
 				atm.showform(player)
-			elseif form == "atm.form2" then
-				atm.showform2(player)
-			elseif form == "atm.form3" then
-				atm.showform3(player)
-			end
 		end
 	end
 
