@@ -43,21 +43,36 @@ function atm.showform (player)
 	"label[8.5,0.75;10s]" ..
 	"label[9.5,0.75;50s]" ..
 	"label[10.5,0.75;100s]" ..
-	"item_image_button[6.5,1.25;1,1;".. "currency:minegeld" ..";i-1;\n\n\b\b\b\b\b" .. "x1" .."]" ..
-	"item_image_button[7.5,1.25;1,1;".. "currency:minegeld_5" ..";i-5;\n\n\b\b\b\b\b" .. "x1" .."]" ..
-	"item_image_button[8.5,1.25;1,1;".. "currency:minegeld_10" ..";i-10;\n\n\b\b\b\b\b" .. "x1" .."]" ..
-	"item_image_button[9.5,1.25;1,1;".. "currency:minegeld_50" ..";i-50;\n\n\b\b\b\b\b" .. "x1" .."]" ..
-	"item_image_button[10.5,1.25;1,1;".. "currency:minegeld_100" ..";i-100;\n\n\b\b\b\b\b" .. "x1" .."]" ..
-	"item_image_button[6.5,2.25;1,1;".. "currency:minegeld" ..";t-10;\n\n\b\b\b\b" .. "x10" .."]" ..
-	"item_image_button[7.5,2.25;1,1;".. "currency:minegeld_5" ..";t-50;\n\n\b\b\b\b" .. "x10" .."]" ..
-	"item_image_button[8.5,2.25;1,1;".. "currency:minegeld_10" ..";t-100;\n\n\b\b\b\b" .. "x10" .."]" ..
-	"item_image_button[9.5,2.25;1,1;".. "currency:minegeld_50" ..";t-500;\n\n\b\b\b\b" .. "x10" .."]" ..
-	"item_image_button[10.5,2.25;1,1;".. "currency:minegeld_100" ..";t-1000;\n\n\b\b\b\b" .. "x10" .."]" ..
-	"item_image_button[6.5,3.25;1,1;".. "currency:minegeld" ..";c-100;\n\n\b\b\b" .. "x100" .."]" ..
-	"item_image_button[7.5,3.25;1,1;".. "currency:minegeld_5" ..";c-500;\n\n\b\b\b" .. "x100" .."]" ..
-	"item_image_button[8.5,3.25;1,1;".. "currency:minegeld_10" ..";c-1000;\n\n\b\b\b" .. "x100" .."]" ..
-	"item_image_button[9.5,3.25;1,1;".. "currency:minegeld_50" ..";c-5000;\n\n\b\b\b" .. "x100" .."]" ..
-	"item_image_button[10.5,3.25;1,1;".. "currency:minegeld_100" ..";c-10000;\n\n\b\b\b" .. "x100" .."]" ..
+	"item_image_button[6.5,1.25;1,1;".. "currency:minegeld" ..";i-1;]" ..
+	"label[6.55,1.75;x1]" ..
+	"item_image_button[7.5,1.25;1,1;".. "currency:minegeld_5" ..";i-5;]" ..
+	"label[7.55,1.75;x1]" ..
+	"item_image_button[8.5,1.25;1,1;".. "currency:minegeld_10" ..";i-10;]" ..
+	"label[8.55,1.75;x1]" ..
+	"item_image_button[9.5,1.25;1,1;".. "currency:minegeld_50" ..";i-50;]" ..
+	"label[9.55,1.75;x1]" ..
+	"item_image_button[10.5,1.25;1,1;".. "currency:minegeld_100" ..";i-100;]" ..
+	"label[10.55,1.75;x1]" ..
+	"item_image_button[6.5,2.25;1,1;".. "currency:minegeld" ..";t-10;]" ..
+	"label[6.55,2.75;x10]" ..
+	"item_image_button[7.5,2.25;1,1;".. "currency:minegeld_5" ..";t-50;]" ..
+	"label[7.55,2.75;x10]" ..
+	"item_image_button[8.5,2.25;1,1;".. "currency:minegeld_10" ..";t-100;]" ..
+	"label[8.55,2.75;x10]" ..
+	"item_image_button[9.5,2.25;1,1;".. "currency:minegeld_50" ..";t-500;]" ..
+	"label[9.55,2.75;x10]" ..
+	"item_image_button[10.5,2.25;1,1;".. "currency:minegeld_100" ..";t-1000;]" ..
+	"label[10.55,2.75;x10]" ..
+	"item_image_button[6.5,3.25;1,1;".. "currency:minegeld" ..";c-100;]" ..
+	"label[6.55,3.75;x100]" ..
+	"item_image_button[7.5,3.25;1,1;".. "currency:minegeld_5" ..";c-500;]" ..
+	"label[7.55,3.75;x100]" ..
+	"item_image_button[8.5,3.25;1,1;".. "currency:minegeld_10" ..";c-1000;]" ..
+	"label[8.55,3.75;x100]" ..
+	"item_image_button[9.5,3.25;1,1;".. "currency:minegeld_50" ..";c-5000;]" ..
+	"label[9.55,3.75;x100]" ..
+	"item_image_button[10.5,3.25;1,1;".. "currency:minegeld_100" ..";c-10000;]" ..
+	"label[10.55,3.75;x100]" ..
 	"button_exit[5.5,3;1,2;Quit;Quit]" ..
 	"list[current_player;main;2,4.5;8,1;]"..
 	"list[current_player;main;2,5.75;8,3;8]"..
