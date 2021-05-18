@@ -3,12 +3,12 @@
 -- Large ATMs (C) 2017 Hans von Smacker
 
 atm = {
-  balance = {},
-  startbalance = 30,
-  pending_transfers = {},
-  completed_transactions = {},
-  pth = minetest.get_worldpath().."/atm_accounts",
-  pth_wt = minetest.get_worldpath().."/atm_wt_transactions"
+	balance = {},
+	startbalance = 30,
+	pending_transfers = {},
+	completed_transactions = {},
+	pth = minetest.get_worldpath().."/atm_accounts",
+	pth_wt = minetest.get_worldpath().."/atm_wt_transactions"
 }
 
 
