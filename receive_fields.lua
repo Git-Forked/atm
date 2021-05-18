@@ -1,6 +1,7 @@
 
 -- Check the form
 
+-- only used for withdrawals
 minetest.register_on_player_receive_fields(function(player, form, pressed)
 
 	-- ATMs
@@ -10,7 +11,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		local pinv=player:get_inventory()
 
 		-- single note transactions
-		for _,i in pairs({1, 5, 10, 50, 100, -1, -5, -10, -50, -100}) do
+		for _,i in pairs({-1, -5, -10, -50, -100}) do
 			if pressed["i"..i] then
 				transaction.amount = i
 				transaction.denomination = '_' .. math.abs(i)
@@ -23,7 +24,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		end
 
 		-- 10x banknote transactions
-		for _,t in pairs({10, 50, 100, 500, 1000, -10, -50, -100, -500, -1000}) do
+		for _,t in pairs({-10, -50, -100, -500, -1000}) do
 			if pressed["t"..t] then
 				transaction.amount = t
 				transaction.denomination = '_' .. math.abs(t/10)
@@ -36,7 +37,7 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 		end
 
 		-- 100x banknote transactions
-		for _,c in pairs({100, 500, 1000, 5000, 10000, -100, -500, -1000, -5000, -10000}) do
+		for _,c in pairs({-100, -500, -1000, -5000, -10000}) do
 			if pressed["c"..c] then
 				transaction.amount = c
 				transaction.denomination = '_' .. math.abs(c/100)

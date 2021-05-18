@@ -28,15 +28,15 @@ minetest.register_on_player_receive_fields(function(player, form, pressed)
 				-- if passed, store the data in a temporary table and show confirmation window
 				if not atm.balance[pressed.dstn] then
 					minetest.chat_send_player(n, "The recepient <" .. pressed.dstn ..
-            "> is not registered in the banking system, aborting")
+						"> is not registered in the banking system, aborting")
 					atm.showform_wt(player)
 				elseif not string.match(pressed.amnt, '^[0-9]+$') then
 					minetest.chat_send_player(n, "Invalid amount <" .. pressed.amnt ..
-            "> : must be an integer number, aborting")
+						"> : must be an integer number, aborting")
 					atm.showform_wt(player)
 				elseif atm.balance[n] < tonumber(pressed.amnt) then
 					minetest.chat_send_player(n, "Your account does not have enough " ..
-            "funds to complete this transfer, aborting")
+						"funds to complete this transfer, aborting")
 					atm.showform_wt(player)
 				else
 					atm.pending_transfers[n] = {to = pressed.dstn, sum = tonumber(pressed.amnt), desc = pressed.desc}
